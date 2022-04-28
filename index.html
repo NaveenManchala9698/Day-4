@@ -4,7 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Day 4</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #pic-card {
+        background-image: url("https://wallpapercave.com/wp/wp7755867.jpg");
+        background-size: contain;
+        display: inline-block;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        margin-top: 200px;
+        position: relative;
+        box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s;
+        overflow: hidden;
+      }
+
+      #pic-card-overlay {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.9699230033810399) 0%,
+          rgba(180, 180, 193, 0.950315160243785) 51%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+
+      #pic-card:hover {
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+      }
+
+      #pic-card-info {
+        color: whitesmoke;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding-bottom: 20px;
+      }
+
+      #pic-card-save {
+        background-color: red;
+        color: aliceblue;
+        height: 30px;
+        width: 50px;
+        top: 30px;
+        right: 20px;
+        position: absolute;
+        cursor: pointer;
+        border-radius: 30%;
+        padding-top: 15px;
+      }
+
+      #pic-card-share {
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        background-color: gray;
+        color: aliceblue;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 20px;
+        width: 60px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="pic-card">
+      <div id="pic-card-overlay"></div>
+      <div id="pic-card-info"><b>I am Groot!</b></div>
+      <div id="pic-card-save"><b>Save</b></div>
+      <div id="pic-card-share"><b>Share</b></div>
+      <div id="pic-card-options"></div>
+    </div>
+  </body>
 </html>
